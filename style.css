@@ -1,3 +1,35 @@
 body {
   margin: 0;
+  justify-content: center;
+  line-height: 1000px;
+  font-family: Arial;
+}
+
+.top{
+  background: #d22f00;
+  font-size:4em;
+  font-weight: 400;
+  color: #7cd200;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.body{
+  background: #7cd200;
+}
+
+p {
+  margin:0;
+}
+
+.body{
+  font-size:4em;
+  font-weight: 400;
+  color: #d22f00;
+  text-align: center;
+}
+
+p:hover{
+  transition: 0.3s text-shadow;
+  background-color: black;
 }
