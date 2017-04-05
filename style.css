@@ -30,6 +30,5 @@ p {
 }
 
 p:hover{
-  transition: 0.3s text-shadow;
-  background-color: black;
+  transition: transition: all ease 2.5s;
 }
