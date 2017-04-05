@@ -1,34 +1,28 @@
 body {
   margin: 0;
-  justify-content: center;
-  line-height: 1000px;
-  font-family: Arial;
 }
 
-.top{
+header{
+  min-height: 100vh;
   background: #d22f00;
   font-size:4em;
   font-weight: 400;
   color: #7cd200;
   text-align: center;
-  min-height: 100vh;
+  text-transform: uppercase;
+  text-shadow:  3px 2px black;
+  display: flex;
+  justify-content: center;
+font-family: sans-serif;
+  align-items: center;
 }
 
-.body{
+
+.body-wrapper{
   background: #7cd200;
-}
-
-p {
-  margin:0;
-}
-
-.body{
+  font-family: sans-serif;
   font-size:4em;
   font-weight: 400;
   color: #d22f00;
   text-align: center;
-}
-
-p:hover{
-  transition: transition: all ease 2.5s;
 }
