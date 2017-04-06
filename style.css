@@ -3,14 +3,13 @@ body {
 }
 
 header{
-  min-height: 100vh;
+  min-height: 100vh;     /* Höhe des Fensters nehmen*/
   background: #d22f00;
   font-size:4em;
   font-weight: 400;
   color: #7cd200;
   text-align: center;
   text-transform: uppercase;
-  text-shadow:  3px 2px black;
   display: flex;
   justify-content: center;
 font-family: sans-serif;
@@ -24,5 +23,25 @@ font-family: sans-serif;
   font-size:4em;
   font-weight: 400;
   color: #d22f00;
-  text-align: center;
+  position: relative;
+}
+
+.hover-shadow{
+    text-shadow:  3px 2px black;
+    transition: 0.3s text-shadow;
+    cursor:cell;
+}
+
+.hover-shadow:hover{
+    text-shadow:  3px 10px black;
+}
+
+.body-wrapper{
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 780px) {  /* verändert die Ansicht ab einer bestimmten Größe */
+  .body-wrapper span{
+    position: absolute;  /* absolute zum nächst oben liegenden Element in der Hicharchy welches nicht gleich static ist*/
+  }
 }
