@@ -12,10 +12,10 @@ body {
 
 header{
   min-height: 100vh;     /* Höhe des Fensters nehmen*/
-  background: #00796B;
+  background: #FF5252;
   font-size:4em;
   font-weight: 400;
-  color: #FF5252;
+  color: #00796B;
   text-align: center;
   text-transform: uppercase;
   display: flex;
@@ -25,11 +25,11 @@ header{
 }
 
 .body-wrapper{
-  background: #FF5252;
+  background: #00796B;
   font-family: sans-serif;
   font-size:4em;
   font-weight: 400;
-  color: #00796B;
+  color: #FF5252;
   position: relative;
   min-height: 100vh;
 }
@@ -68,12 +68,12 @@ header{
 .socicon-twitch, .socicon-twitter, .socicon-steam{
   color: #00796B;
   font-size: 10rem;
-  text-shadow:  3px 2px black;
-  transition: 0.3s text-shadow;
+  text-shadow:  1px 1px black;
+  transition: 0.1s text-shadow;
 }
 
 .socicon-twitch:hover, .socicon-twitter:hover, .socicon-steam:hover{
-  text-shadow: 3px 10px 5px black;
+  text-shadow: 1px 5px black;
 }
 
 @media screen and (min-width: 780px) {  /* verändert die Ansicht ab einer bestimmten Größe */
