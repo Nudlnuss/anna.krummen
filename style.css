@@ -41,7 +41,7 @@ header{
 }
 
 .hover-shadow:hover{
-    text-shadow:  3px 10px 5px black;
+    text-shadow:  3px 7px 5px black;
 }
 
 @media screen and (min-width: 780px) {  /* verändert die Ansicht ab einer bestimmten Größe */
@@ -73,7 +73,7 @@ header{
 }
 
 .socicon-twitch:hover, .socicon-twitter:hover, .socicon-steam:hover{
-  text-shadow: 1px 5px black;
+  text-shadow: 1px 5px 1px black;
 }
 
 @media screen and (min-width: 780px) {  /* verändert die Ansicht ab einer bestimmten Größe */
