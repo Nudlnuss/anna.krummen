@@ -2,12 +2,20 @@ body {
   margin: 0;
 }
 
+@font-face {
+  font-family: 'Socicon';
+  src: url('socicon/fonts/Socicon.eot');
+  src: url('socicon&/fonts/Socicon.eot#iefix') format('embedded-opentype'), url('fonts/Socicon.woff2') format('woff2'), url('fonts/Socicon.ttf') format('truetype'), url('fonts/Socicon.woff') format('woff'), url('fonts/Socicon.svg#Socicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 header{
   min-height: 100vh;     /* Höhe des Fensters nehmen*/
-  background: #d22f00;
+  background: #00796B;
   font-size:4em;
   font-weight: 400;
-  color: #7cd200;
+  color: #FF5252;
   text-align: center;
   text-transform: uppercase;
   display: flex;
@@ -16,14 +24,14 @@ header{
   align-items: center;
 }
 
-
 .body-wrapper{
-  background: #7cd200;
+  background: #FF5252;
   font-family: sans-serif;
   font-size:4em;
   font-weight: 400;
-  color: #d22f00;
+  color: #00796B;
   position: relative;
+  min-height: 100vh;
 }
 
 .hover-shadow{
@@ -36,27 +44,15 @@ header{
     text-shadow:  3px 10px 5px black;
 }
 
-.body-wrapper{
-  min-height: 100vh;
-}
-
 @media screen and (min-width: 780px) {  /* verändert die Ansicht ab einer bestimmten Größe */
   .body-wrapper span{
     position: absolute;  /* absolute zum nächst oben liegenden Element in der Hicharchy welches nicht gleich static ist*/
   }
 }
 
-@font-face {
-  font-family: 'Socicon';
-  src: url('socicon/fonts/Socicon.eot');
-  src: url('socicon&/fonts/Socicon.eot#iefix') format('embedded-opentype'), url('fonts/Socicon.woff2') format('woff2'), url('fonts/Socicon.ttf') format('truetype'), url('fonts/Socicon.woff') format('woff'), url('fonts/Socicon.svg#Socicon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 .section-bottom{
   min-height: 100vh;
-  background: #7cd200;
+  background: #FF5252;
   justify-content: space-around;
   display: flex;
   align-items: center;
@@ -65,21 +61,20 @@ header{
   flex-direction: column;
 }
 
-
 .section-bottom a{
-    text-decoration: none;
+ text-decoration: none;
 }
 
-.socicon-twitch, .socicon-twitter, .socicon-facebook{
-  color: #6441a5;
+.socicon-twitch, .socicon-twitter, .socicon-steam{
+  color: #00796B;
   font-size: 10rem;
-  padding:0 0 0 0;
+  text-shadow:  3px 2px black;
+  transition: 0.3s text-shadow;
 }
 
-.socicon-twitch:before{
-  content: "\e049";
+.socicon-twitch:hover, .socicon-twitter:hover, .socicon-steam:hover{
+  text-shadow: 3px 10px 5px black;
 }
-
 
 @media screen and (min-width: 780px) {  /* verändert die Ansicht ab einer bestimmten Größe */
   .section-bottom{
