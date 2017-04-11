@@ -35,7 +35,6 @@ header{
 }
 
 .hover-shadow{
-    text-shadow:  3px 2px black;
     transition: 0.3s text-shadow;
     cursor:cell;
 }
