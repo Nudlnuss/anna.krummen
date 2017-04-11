@@ -55,10 +55,14 @@ header{
 }
 
 .section-bottom{
+  min-height: 100vh;
   background: #7cd200;
-  justify-content: center;
+  justify-content: space-around;
   display: flex;
   align-items: center;
+  position: relative;
+  display:flex;
+  flex-direction: column;
 }
 
 
@@ -74,4 +78,11 @@ header{
 
 .socicon-twitch:before{
   content: "\e049";
+}
+
+
+@media screen and (min-width: 780px) {  /* verändert die Ansicht ab einer bestimmten Größe */
+  .section-bottom{
+    flex-direction: row;
+  }
 }
