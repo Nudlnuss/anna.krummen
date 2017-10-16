@@ -1,0 +1,24 @@
+{
+  "name": "anna.krummen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":"npm run clean && npm run minify && npm run copy && npm run move",
+    "clean":"rm  -rf dist && mkdir dist",
+    "move": "mv style.min.css dist/style.min.css",
+    "copy":"cp index.html dist/index.html",
+    "minify":"node_modules/.bin/cleancss style.css -o style.min.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nudlnuss/anna.krummen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nudlnuss/anna.krummen/issues"
+  },
+  "homepage": "https://github.com/Nudlnuss/anna.krummen#readme"
+}
