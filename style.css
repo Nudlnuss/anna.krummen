@@ -24,6 +24,12 @@ header{
   align-items: center;
 }
 
+p {
+  font-family: sans-serif;
+  padding: 0 0 0 10px;
+  font-size: 1.0em;
+}
+
 .body-wrapper{
   background: #CDDC39;
   font-family: sans-serif;
@@ -58,10 +64,12 @@ header{
   position: relative;
   display:flex;
   flex-direction: column;
+
 }
 
 .section-bottom a{
  text-decoration: none;
+
 }
 
 .socicon-twitch, .socicon-twitter, .socicon-steam{
@@ -69,6 +77,7 @@ header{
   font-size: 10rem;
   text-shadow:  1px 1px black;
   transition: 0.1s text-shadow;
+
 }
 
 .socicon-twitch:hover, .socicon-twitter:hover, .socicon-steam:hover{
@@ -79,4 +88,58 @@ header{
   .section-bottom{
     flex-direction: row;
   }
+}
+
+.kulturbanause-logo:hover .turnaround {
+   transform: rotateY(180deg); /* Beim Mouse-Over wird die Szene umgedreht */
+}
+
+.animation{
+    height: 250px;
+    width: 250px;
+    float: left;
+    margin: 0 1em;
+    border:1px;
+    z-index: 10;
+}
+
+.animation:hover .turnaround {
+   transform: rotateY(180deg); /* Beim Mouse-Over wird die Szene umgedreht */
+}
+
+.animation .front {
+   background-color:#FFFF00;
+   box-shadow: 5px 10px 15px #424242;
+}
+
+
+.turnaround {
+   transition: .5s /* Die Drehung soll 0,5 Sekunden dauern */;
+   transform-style: preserve-3d; /* Kind-Elemente  (.front + .back) sollen ihre 3D-Eigenschaften behalten*/
+   position: relative;
+   height: 100%;
+}
+
+.front,
+.back {
+   backface-visibility: hidden /* Die Rückseite von Elementen soll unsichtbar sein */;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+}
+
+.front { z-index: 2; }
+
+.back {
+   transform: rotateY(180deg) /* Die Rückseite des Logos wird umgedreht, um dann bei der Drehung der gesamten Szene vorne zu sein :) */;
+   z-index: 1;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid white;
+  float: right;
 }
